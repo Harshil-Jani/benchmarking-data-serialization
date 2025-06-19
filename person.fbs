@@ -1,0 +1,14 @@
+namespace MyData.Sample;
+
+table Person {
+  name: string;
+  id: long;
+  email: string;
+  samples: [double];
+}
+
+table AddressBook {
+    people:[Person];
+}
+
+root_type AddressBook;
